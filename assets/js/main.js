@@ -1,1 +1,11 @@
-console.log('Noyon')
+function DeleteMe(){
+
+}
+
+function calculator(){
+
+}
+
+function answer(){
+
+}
