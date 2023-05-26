@@ -1,14 +1,11 @@
 function DeleteMe(){
-document.getElementById("myResult").value="";
+    document.getElementById("myResult").value="";
 }
-
-function calculator(newValue){
+function Calculator(newValue){
     document.getElementById("myResult").value +=newValue;
-
 }
-
-function answer(){
+function Answer(){
     var a = document.getElementById("myResult").value;
-    var b = eval(a);
+    var b= eval(a);
     document.getElementById("myResult").value=b;
 }

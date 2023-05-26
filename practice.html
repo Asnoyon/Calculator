@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcultor Practice</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center min-vh-100 align-items-center">
+        <table>
+            <tr>
+                <td colspan="4"><input type="text"  id="myResult"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="AC" onclick="myResult.value='' "></td>
+                <td><input type="button" value="(" onclick="myResult.value +='(' "></td>
+                <td><input type="button" value=")" onclick="myResult.value +=')' "></td>
+                <td><input type="button" value="D" onclick="myResult.value= myResult.value.toString().slice(0,-1)"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="myResult.value+='7'"></td>
+                <td><input type="button" value="8" onclick="myResult.value+='8'"></td>
+                <td><input type="button" value="9" onclick="myResult.value+='9'"></td>
+                <td><input type="button" value="+" onclick="myResult.value+='+'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="myResult.value+='4'"></td>
+                <td><input type="button" value="5" onclick="myResult.value+='5'"></td>
+                <td><input type="button" value="6" onclick="myResult.value+='6'"></td>
+                <td><input type="button" value="-" onclick="myResult.value+='-'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="myResult.value+='1'"></td>
+                <td><input type="button" value="2" onclick="myResult.value+='2'"></td>
+                <td><input type="button" value="3" onclick="myResult.value+='3'"></td>
+                <td><input type="button" value="*" onclick="myResult.value+='*'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" onclick="myResult.value+='0'"></td>
+                <td><input type="button" value="." onclick="myResult.value+='.'"></td>
+                <td><input type="button" value="/" onclick="myResult.value+='/'"></td>
+                <td><input type="button" value="=" onclick="myResult.value=eval(myResult.value)"></td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <!-- <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script> -->
+</body>
+</html>
